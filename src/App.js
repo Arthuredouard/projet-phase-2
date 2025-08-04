@@ -5,13 +5,15 @@ import AddMovieForm from './components/AddMovieForm';
 import Home from './pages/Home';
 import About from './pages/About';
 
+const BASE_URL = process.env.REACT_APP_BASE_URL || 'https://projet-phase-2-backend.onrender.com';
+
 function App() {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/movies')
-       .then(res => res.json())
-       .then(setMovies);
+    fetch(`${BASE_URL}/movies`)
+      .then((res) => res.json())
+      .then(setMovies);
   }, []);
 
   function addMovie(newMovie) {
@@ -19,17 +21,17 @@ function App() {
   }
 
   function addLike(id) {
-    const target = movies.find(m => m.id === id);
+    const target = movies.find((m) => m.id === id);
     if (!target) return;
 
-    fetch(`http://localhost:3001/movies/${id}`, {
+    fetch(`${BASE_URL}/movies/${id}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ likes: target.likes + 1 })
     })
-      .then(res => res.json())
-      .then(updated => {
-        setMovies(movies.map(m => m.id === id ? updated : m));
+      .then((res) => res.json())
+      .then((updated) => {
+        setMovies(movies.map((m) => (m.id === id ? updated : m)));
       });
   }
 
@@ -46,3 +48,4 @@ function App() {
 }
 
 export default App;
+
