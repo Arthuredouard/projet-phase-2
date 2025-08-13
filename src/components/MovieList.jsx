@@ -1,12 +1,20 @@
 import MovieCard from './MovieCard';
 
-export default function MovieList({ movies, deleteMovie }) {
-  if (movies.length === 0) return <p>No movie found.</p>;
+export default function MovieList({ movies = [], deleteMovie, addLike }) {
+  if (!movies || movies.length === 0) return <p>No movies found.</p>;
+
   return (
-    <div>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
       {movies.map(movie => (
-        <MovieCard key={movie.id} movie={movie} deleteMovie={deleteMovie} />
+        <MovieCard
+          key={movie.id}
+          movie={movie}
+          deleteMovie={deleteMovie}
+          addLike={addLike}
+        />
       ))}
     </div>
   );
 }
+
+

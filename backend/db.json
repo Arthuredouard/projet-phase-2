@@ -2,45 +2,52 @@
   "movies": [
     {
       "id": "1",
-      "title": "Titanic",
-      "image": "https://upload.wikimedia.org/wikipedia/en/2/22/Titanic_poster.jpg",
-      "likes": 9
+      "title": "KPop Demon Hunters",
+      "image": "https://images.pexels.com/photos/3760857/pexels-photo-3760857.jpeg",
+      "likes": 35,
+      "year": 2025
     },
     {
       "id": "2",
-      "title": "Fast and Furious",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/8f/Fast_and_the_furious_poster.jpg",
-      "likes": 16
-    },
-    {
-      "id": "004d",
-      "title": "Titanic (Version Disney+)",
-      "image": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D1F25C08A1E49A028832DBF9A6649AB099CCD540ADE779299BFA1CDEC961ACFD/scale?width=1200&aspectRatio=1.78&format=jpeg",
-      "likes": 1
+      "title": "My Oxford Year",
+      "image": "https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg",
+      "likes": 28,
+      "year": 2025
     },
     {
       "id": "3",
-      "title": "Mission: Impossible - The Final Reckoning",
-      "image": "https://m.media-amazon.com/images/I/81xKZzZKJjL._AC_SL1500_.jpg",
-      "likes": 22
+      "title": "Happy Gilmore 2",
+      "image": "https://images.pexels.com/photos/1325669/pexels-photo-1325669.jpeg",
+      "likes": 31,
+      "year": 2025
     },
     {
       "id": "4",
-      "title": "28 Years Later",
-      "image": "https://upload.wikimedia.org/wikipedia/en/3/3f/28_Years_Later_poster.jpg",
-      "likes": 18
+      "title": "Trainwreck: Storm Area 51",
+      "image": "https://images.pexels.com/photos/256369/pexels-photo-256369.jpeg",
+      "likes": 19,
+      "year": 2025
     },
     {
       "id": "5",
-      "title": "L'Attachement",
-      "image": "https://mspfilm.org/media/film_images/lattachement.jpg",
-      "likes": 14
+      "title": "Hotel Transylvania 3",
+      "image": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+      "likes": 22,
+      "year": 2025
     },
     {
       "id": "6",
-      "title": "Partir un jour",
-      "image": "https://m.media-amazon.com/images/I/71xKZzZKJjL._AC_SL1500_.jpg",
-      "likes": 19
+      "title": "Rampage 2",
+      "image": "https://images.pexels.com/photos/2091166/pexels-photo-2091166.jpeg",
+      "likes": 16,
+      "year": 2025
+    },
+    {
+      "id": "7",
+      "title": "UNTAMED",
+      "image": "https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg",
+      "likes": 12,
+      "year": 2025
     }
   ]
 }
